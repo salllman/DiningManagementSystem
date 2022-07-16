@@ -1,0 +1,22 @@
+{
+  "name": "dining-management-system",
+  "version": "1.0.0",
+  "description": "Mini project for dbms lab (18CSL58) by Mohammed Salman M R and Mohammed Raiyan Ahmed",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mohammed Raiyan Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  }
+}

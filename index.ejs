@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Management System</title>
+
+    <!--Bootstrap & FontAwesome CDN links-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--OWN CSS links-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="shortcut icon" href="Images/fevicon.png" type="image/x-icon">
+    
+
+</head>
+
+<body>
+    <!--Header Design-->
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home"><img id="logo" src="/Images/Pink Circular Beauty Clinic Doctor Logo.svg" alt="logo" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class=" fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">REVIEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+                        <li>
+                            <a href="/login"><button class="main-btn login">LOGIN</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Section 1 top banner -->
+
+    <section id="home">
+        <div class="container-fluid px-0 top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <h1>DINING MANAGEMENT SYSTEM</h1>
+                        <p><i>"Moving a step ahead in making your dine extra comfortable"</i></p>
+                        <div class="mt-4">
+                            <a href="/book-table"><button class="main-btn">
+                                BOOK NOW<i class="fas fa-utensils ps-2"></i>
+                            </button></a>
+                            <a href="#reviews"><button class="white-btn ms-lg-4 mt-lg-4 mt-lg-0 mt-4">
+                                    Our Happy Customers<i class="fas fa-users ps-2"></i><i class="fas fa-angle-right ps-2"></i>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 2 Counter-->
+    <section id="counter">
+        <section class="counter-section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-lg-0 mb-md-0 mb-6">
+                        <h2>
+                            <span id="count1"></span>+
+                        </h2>
+                        <p>CUSTOMERS</p>
+                    </div>
+                    <!-- <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count2"></span>+
+                        </h2>
+                        <p>PHOTOS</p>
+                    </div> -->
+                    <div class="col-md-4 mb-lg-0 mb-md-0 mb-6">
+                        <h2>
+                            <span id="count3"></span>+
+                        </h2>
+                        <p>BOOKINGS</p>
+                    </div>
+                    <div class="col-md-4 mb-lg-0 mb-md-0 mb-6">
+                        <h2>
+                            <span id="count4"></span>+
+                        </h2>
+                        <p>CITIES</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--About Section-->
+
+    <section id="about">
+        <div class="about-section wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+                        <div class="card border-0">
+                            <img src="Images/Image/image1.jpg" alt="about" clas="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-sec">
+                        <h2>Our Journey</h2>
+                        <p>We have always been obsessed with pre-empting and fulfilling the wants of today’s diner. In
+                            2022, its simply meant allowing diners to reserve a guaranteed table at our restaurants in
+                            various cities.
+                        <ul class="list-unstyled py-3">
+                            <li>Connecting diners to the best-in-the-city restaurant.</li>
+                            <li>Giving diners a systematic and timely feel of dining out.</li>
+                            <li>A unique happiness of comfortable dine-out with family and friends.</li>
+                        </ul>
+                        </p>
+                        <a href="/book-table"><button class="main-btn mt-4"> BOOK NOW<i class="fas fa-utensils ps-2"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--REVIEWS-SECTION-->
+
+    <section id="reviews">
+        <div class="wrapper reviews-section">
+            <div class="container text-center">
+                <div class="text-center pb-4">
+                    <h2>Our Happy Customers</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 offset-lg-1">
+                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <img src="images/review/review-1.jpg">
+                                        <p>"The service was so good that I wanted to gift them my shares of Tesla and SpaceX "</p>
+                                        <h5>Elon-Musk </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="images/review/review-2.jpg">
+                                        <p>"Best food I ever had in my life. Thankful to you guys as it made me experience the taste i never had an experience of."</p></h5>
+                                            <h5>Sundar Pichai</h5>
+                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="images/review/review-3.jpg">
+                                        <p>"The food was tasty and the place was hygenic. I would recommend this place to my friends and family. Maybe dedicate a section of amazon for advertising this wonderful service."</p>
+                                        <h5>Jeff Bezos</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FAQ SECTION-->
+    <section id="faq">
+        <div class="faq wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="text-center pb-4">
+                 <h2>Frequently Asked Questions</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5">
+              <div class="col-sm-6 mb-4">
+               <h4><span>~> </span>What is the time range for booking tables online?</h4>
+               <p>The decided time range for online tabkle bookings is 9am to 10pm. After 10pm, no bookings are accepted. We have a daily booking system, that is, 
+                   we only accept bookings for the current day. So you can only book a table, on the day you want to dine in.
+               </p>
+              </div>
+              <div class="col-sm-6 mb-4">
+               <h4><span>~> </span>What if we want to extend our booking?</h4>
+               <p>We suggest you to book a table according to the time convinient to you. If you would want to extend your booking time, we would be very happy to 
+                   host you if a table is available. On the contrary, if there are no vacant tables at the moment, we would have to apologize for not being
+                   able to fulfill you request.
+               </p>
+              </div>
+              <div class="col-sm-6 mb-4">
+               <h4><span>~> </span>What is the pricing of table reservation?</h4>
+               <p>Technically, our table reservation policy is completely free. You pay a specified amount during table booking, which is then 
+                   adjusted with your food bill, hence allowing you to book a table for free. However, if you donot show up after booking a table, the amount paid will 
+                   not be refunded.
+               </p>
+              </div>
+              <div class="col-sm-6 mb-4">
+               <h4><span>~> </span>How much earlier are we allowed to cancel a booking?</h4>
+               <p>At the moment, we dont have any cancellation policy. It will surely be brought into the picture in the soon future. 
+                   If you book a table and dont show up, the table will still be reserved until the time you had chosen comes to pass. However your 
+                   booking fee won't be refunded as per the current policies.
+               </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--BOOK-TABLE-->
+
+      <section id="book-table">
+        <div class="book-table">
+          <div class="container book-food-text">
+            <div class="row text-center">
+              <div class="col-lg-9 col-md-12">
+               <h2>Book your table now for a comfortable dine</h2>
+              </div>
+              <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+                <a href="/login"><button class="white-btn">LOGIN</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Footer Section-->
+
+      <footer id="footer">
+        <div class="footer py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <a class="footer-link" href="#home">HOME</a>
+                <a class="footer-link" href="#about">ABOUT</a>
+                <a class="footer-link" href="#reviews">SOCIALIZE</a>
+                <a class="footer-link" href="#faq">FAQ</a>
+                <div class="footer-social pt-4 text-center">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="footer-copy">
+                  <div class="copy-right text-center pt-5">
+                    <p class="text-light">
+                        Website designed and developed by Mohammed Raiyan and Mohammed Salman
+                        © 2022. Booking-Tables. All rights reserved.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--JS Libraries-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--OWN JS-->
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

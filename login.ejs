@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login / Sign Up</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="./CSS/login.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form" id="login" action="/login" method="post">
+      <h1 class="formTitle">Login</h1>
+      <div class="formMessage formMessage--error"></div>
+      <div class="formInput-group">
+        <input
+          type="email"
+          class="formInput"
+          name="email"
+          autofocus
+          required
+          placeholder="abc@email.com"
+        />
+        <div class="formInput-error-message"></div>
+      </div>
+      <div class="formInput-group">
+        <input
+          type="password"
+          class="formInput"
+          name="password"
+          autofocus
+          required
+          placeholder="Password"
+        />
+        <div class="formInput-error-message"><%=error_string%></div>
+      </div>
+      <button class="formButton" type="submit">Login</button>
+      <p class="formText">
+        <!-- <a href="#" class="formLink">Forgot your password?</a> -->
+      </p>
+      <p class="formText">
+        <a class="formLink" href="./" id="linkCreateAccount"
+          >Don't have an account? Create account</a
+        > <a href="/" id="linkCreateAccount" class="formLink">Back to home</a>
+      </p>
+    </form>
+    <form
+      class="form form--hidden"
+      id="createAccount"
+      action="/register"
+      method="post"
+    >
+      <h1 class="formTitle">Create Account</h1>
+      <div class="formMessage formMessage--error"></div>
+      <div class="formInput-group">
+        <input
+          type="text"
+          id="firstName"
+          class="formInput"
+          autofocus
+          required
+          name="fname"
+          placeholder="First Name"
+        />
+        <div class="formInput-error-message"><%=error_string%></div>
+      </div>
+      <div class="formInput-group">
+        <input
+          type="text"
+          id="lastName"
+          class="formInput"
+          name="lname"
+          autofocus
+          placeholder="Last Name"
+        />
+        <div class="formInput-error-message"></div>
+      </div>
+      <div class="formInput-group">
+        <label>
+          <h2>
+            Gender :
+            <input type="radio" name="gender" value="M" checked />
+            <label for="M">Male</label>
+            <input type="radio" name="gender" value="F" />
+            <label for="F">Female</label>
+          </h2>
+        </label>
+      </div>
+
+      <div class="formInput-group">
+        <input
+          type="text"
+          class="formInput"
+          autofocus
+          required
+          name="phone"
+          placeholder="Phone Number"
+        />
+        <div class="formInput-error-message"></div>
+      </div>
+      <div class="formInput-group">
+        <input
+          type="email"
+          class="formInput"
+          autofocus
+          required
+          name="email"
+          placeholder="Email Address"
+        />
+        <div class="formInput-error-message"></div>
+      </div>
+      <div class="formInput-group">
+        <input
+          type="password"
+          class="formInput"
+          autofocus
+          required
+          name="password"
+          placeholder="Password"
+        />
+        <div class="formInput-error-message"></div>
+      </div>
+      <!-- <div class="formInput-group">
+                <input type="password" class="formInput" autofocus placeholder="Confirm password">
+                <div class="formInput-error-message"></div>
+            </div> -->
+      <button class="formButton" type="submit">Sign-Up</button>
+      <p class="formText">
+        <a class="formLink" href="./" id="linkLogin"
+          >Already have an account? Sign in</a
+        >
+      </p>
+    </form>
+  </div>
+  <script src="./JS/login.js"></script>
+</body>
